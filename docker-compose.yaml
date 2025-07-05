@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: paved_development
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local
+# This docker-compose file sets up a PostgreSQL database service.
+# It uses the official PostgreSQL image, exposes port 5432,
+# and sets environment variables for the database user, password, and name.
+# The database data is stored in a named volume called postgres_data.
+# This allows the database to persist data even if the container is stopped or removed.
+# The volume is created using the local driver, which stores data on the host machine.

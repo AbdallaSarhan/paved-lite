@@ -1,0 +1,88 @@
+# Paved Lite
+
+A full-stack application with Rails backend and React frontend featuring user authentication.
+
+## Backend (Rails)
+
+The backend is a Rails API application with Devise JWT authentication.
+
+### Setup
+
+1. Navigate to the backend directory:
+
+   ```bash
+   cd backend
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   bundle install
+   ```
+
+3. Set up the database:
+
+   ```bash
+   bin/rails db:create
+   bin/rails db:migrate
+   ```
+
+4. Start the Rails server:
+   ```bash
+   bin/rails server
+   ```
+
+The backend will be available at `http://localhost:3000`
+
+### API Endpoints
+
+- `POST /login` - User login
+- `POST /signup` - User registration
+- `DELETE /logout` - User logout
+
+## Frontend (React)
+
+The frontend is a React TypeScript application with authentication components.
+
+### Setup
+
+1. Navigate to the frontend directory:
+
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+The frontend will be available at `http://localhost:5173`
+
+### Features
+
+- User login and registration
+- Protected routes
+- JWT token authentication
+- Responsive design with CSS
+- Form validation
+
+## Usage
+
+1. Start both the backend and frontend servers
+2. Navigate to `http://localhost:5173`
+3. Create an account or sign in
+4. Access the protected dashboard
+
+## Development
+
+- Backend: Rails 8.0 with Devise JWT
+- Frontend: React 19 with TypeScript
+- Authentication: JWT tokens stored in localStorage
+- Styling: Custom CSS (no Tailwind)
