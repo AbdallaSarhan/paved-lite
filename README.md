@@ -2,6 +2,19 @@
 
 A full-stack application with Rails backend and React frontend featuring user authentication.
 
+## Core Features
+
+- **JWT Authentication:** Secure login and signup with Devise and JWT tokens.
+- **Onboarding Flow:** Users select a role (Advertiser or Publisher) and complete a profile before accessing dashboards.
+- **Role-Based Dashboards:**
+  - **Advertisers:**
+    - Browse and search for publishers/newsletters.
+    - Send sponsorship requests to publishers, including a message and budget.
+    - View request history and statuses (pending, accepted, declined, completed).
+  - **Publishers:**
+    - View incoming requests from advertisers.
+    - Accept, decline, or mark requests as complete.
+
 ## Database Setup (Postgres via Docker)
 
 This project uses PostgreSQL for the backend database, managed via Docker Compose.
@@ -87,14 +100,6 @@ The frontend is a React TypeScript application with authentication components.
 
 The frontend will be available at `http://localhost:5173`
 
-### Features
-
-- User login and registration
-- Protected routes
-- JWT token authentication
-- Responsive design with CSS
-- Form validation
-
 ## Usage
 
 1. Start both the backend and frontend servers
@@ -107,4 +112,4 @@ The frontend will be available at `http://localhost:5173`
 - Backend: Rails 8.0 with Devise JWT
 - Frontend: React 19 with TypeScript
 - Authentication: JWT tokens stored in localStorage
-- Styling: Custom CSS (no Tailwind)
+- Styling: Custom CSS
