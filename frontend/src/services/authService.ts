@@ -50,7 +50,7 @@ class AuthService {
   async login(credentials: LoginCredentials): Promise<AuthResponse> {
     try {
       const response = await api.post('/login', credentials);
-      const { user, token } = response.data;
+      const { token } = response.data;
       
       // Store the JWT token
       localStorage.setItem('jwt_token', token);
@@ -80,7 +80,7 @@ class AuthService {
   async signup(credentials: SignupCredentials): Promise<AuthResponse> {
     try {
       const response = await api.post('/signup', credentials);
-      const { user, token } = response.data;
+      const { token } = response.data;
       
       // Store the JWT token
       localStorage.setItem('jwt_token', token);
@@ -131,7 +131,7 @@ class AuthService {
     console.log('setRole: Authorization header:', token ? `Bearer ${token}` : 'None');
     console.log('PATCHing to /users/role', role);
     try {
-      const response = await api.patch('/users/role', { role });
+      await api.patch('/users/role', { role });
       
       // Fetch the complete user profile from the server
       const profileResponse = await api.get('/users/profile');

@@ -22,23 +22,10 @@ const boxStyle: React.CSSProperties = {
   alignItems: "center",
 };
 
-const boxActiveStyle: React.CSSProperties = {
-  ...boxStyle,
-  border: "2px solid #4f46e5",
-  boxShadow: "0 4px 16px rgba(79,70,229,0.08)",
-};
-
 const iconStyle: React.CSSProperties = {
   fontSize: "2.5rem",
   marginBottom: "1rem",
   color: "#4f46e5",
-};
-
-const containerStyle: React.CSSProperties = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  marginTop: "2rem",
 };
 
 const ChooseRole: React.FC = () => {

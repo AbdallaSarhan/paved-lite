@@ -6,25 +6,6 @@ import AdvertiserDashboard from "../components/AdvertiserDashboard";
 import Logo from "../components/Logo";
 import "./Auth.css";
 
-// Mock data
-const mockAdvertiserRequests = [
-  {
-    id: 1,
-    advertiser: "Acme Corp",
-    message: "We'd like to sponsor your newsletter!",
-  },
-  {
-    id: 2,
-    advertiser: "Brandify",
-    message: "Interested in a partnership for Q3.",
-  },
-];
-
-const mockPublishers = [
-  { id: 1, name: "The Daily Byte", description: "Tech news and insights." },
-  { id: 2, name: "Health Weekly", description: "Wellness tips and trends." },
-];
-
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState<any>(null);
