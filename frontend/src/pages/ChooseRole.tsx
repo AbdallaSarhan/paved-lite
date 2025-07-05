@@ -4,24 +4,6 @@ import authService from "../services/authService";
 import { FaRegNewspaper, FaBullhorn } from "react-icons/fa";
 import "./Auth.css";
 
-const boxStyle: React.CSSProperties = {
-  border: "2px solid #e5e7eb",
-  borderRadius: "0.5rem",
-  padding: "2rem 2.5rem",
-  margin: "1rem",
-  cursor: "pointer",
-  fontSize: "1.3rem",
-  fontWeight: 600,
-  background: "#fff",
-  transition: "border-color 0.2s, box-shadow 0.2s",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.03)",
-  textAlign: "center",
-  width: "180px",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-};
-
 const iconStyle: React.CSSProperties = {
   fontSize: "2.5rem",
   marginBottom: "1rem",
