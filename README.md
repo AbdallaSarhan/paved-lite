@@ -1,6 +1,6 @@
 # Paved Lite
 
-A full-stack application with Rails backend and React frontend featuring user authentication.
+> This project is inspired by the Paved platform and was developed to demonstrate relevant full-stack skills. It showcases a modern Rails + React architecture, role-based onboarding, JWT authentication, and request management between advertisers and publishers.
 
 ## Core Features
 
