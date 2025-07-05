@@ -2,6 +2,28 @@
 
 A full-stack application with Rails backend and React frontend featuring user authentication.
 
+## Database Setup (Postgres via Docker)
+
+This project uses PostgreSQL for the backend database, managed via Docker Compose.
+
+### Steps to Start the Postgres Container
+
+1. Make sure you have [Docker](https://www.docker.com/products/docker-desktop/) installed and running.
+2. In the project root, run:
+   ```bash
+   docker-compose up -d
+   ```
+   This will start a Postgres 16 container with the following settings:
+   - **User:** postgres
+   - **Password:** postgres
+   - **Database:** paved_development
+   - **Port:** 5432 (exposed to your host)
+   - **Data Persistence:** Data is stored in a Docker volume (`postgres_data`) so it persists across restarts.
+3. To stop the container:
+   ```bash
+   docker-compose down
+   ```
+
 ## Backend (Rails)
 
 The backend is a Rails API application with Devise JWT authentication.
