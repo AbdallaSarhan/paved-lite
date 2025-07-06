@@ -2,6 +2,31 @@
 
 > This project is inspired by the Paved platform and was developed to demonstrate relevant full-stack skills. It showcases a modern Rails + React architecture, role-based onboarding, JWT authentication, and request management between advertisers and publishers.
 
+## Live Demo
+
+You can try the app here:  
+👉 [https://paved-lite.onrender.com/](https://paved-lite.onrender.com/)
+
+> ⚠️ Please note: Since it’s hosted on a free Render plan, the backend may take up to a minute to cold-start the first time you load it.
+
+### 🔑 Test Accounts
+
+You can log in with the following test accounts or create your own:
+
+#### 📬 Publisher (Newsletter)
+
+- **Email:** `test3@gmail.com`
+- **Password:** `password`
+- Represents: _James Reverie Newsletter_ (Finance)
+
+#### 📣 Advertiser (App)
+
+- **Email:** `test4@gmail.com`
+- **Password:** `password`
+- Represents: _Emily Chen from FinTrack App_
+
+---
+
 ## Core Features
 
 - **JWT Authentication:** Secure login and signup with Devise and JWT tokens.
