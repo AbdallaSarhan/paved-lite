@@ -7,7 +7,7 @@
 You can try the app here:  
 👉 [https://paved-lite.onrender.com/](https://paved-lite.onrender.com/)
 
-> ⚠️ Please note: Since it’s hosted on a free Render plan, the backend may take up to a minute to cold-start the first time you load it.
+> ⚠️ Please note: Since it’s hosted on a free Render plan, the backend may take up to a minute to cold-start the first time you load it (will be noticed on your first backend call likely during login/signup).
 
 ### 🔑 Test Accounts
 
